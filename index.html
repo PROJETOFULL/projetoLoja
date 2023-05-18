@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="icon" href="image/iconMoto.png">
     <title>Moto City</title>
 </head>
+
 <body>
     <!--Inicio header-->
     <header>
@@ -19,12 +21,24 @@
 
         <!--nav-->
         <ul id="header">
-            <a href="#"><li>Início</li></a>
-            <a href="#produtos"><li>Produtos</li></a>
-            <a href="#sobre"><li>Sobre</li></a>
-            <a href="#contatos"><li>Contatos</li></a>
-           <a href="#"><li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li></a>
-           <a href="#"><li><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></li></a>
+            <a href="#">
+                <li>Início</li>
+            </a>
+            <a href="#produtos">
+                <li>Produtos</li>
+            </a>
+            <a href="#sobre">
+                <li>Sobre</li>
+            </a>
+            <a href="#contatos">
+                <li>Contatos</li>
+            </a>
+            <a href="#">
+                <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+            </a>
+            <a href="#">
+                <li><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></li>
+            </a>
         </ul>
     </header>
     <!--fim header-->
@@ -35,66 +49,71 @@
 
     <!--inicio footer-->
     <footer id="contatos">
-        <div id="footer_content">
+        <div class="container-footer">
+            <div class="row-footer">
 
-            <ul class="footer-list">
-                <li><h3>Nossa localização</h3></li>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5208418305733!2d-46.61147392516723!3d-23.513762278832544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58bc0ae135f9%3A0xb45b32312be49b53!2sRua%20Jos%C3%A9%20Bernardo%20Pinto%20-%20Vila%20Guilherme%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1684201954583!5m2!1spt-BR!2sbr"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </ul>
+                <!--footer coluna 1-->
+                <div class="footer-col">
+                    <h4>Contatos</h4>
+                    <ul>
+                        <a href="">
+                            <li><i class="fa-solid fa-phone"></i> (11) 3678-8689</li>
+                        </a>
 
-            <ul class="footer-list">
-                <li>
-                    <h3>Ajuda</h3>
-                </li>
-                <li><a href="" class="footer-link">Dúvidas em gerais</a></li>
-                <li><a href="" class="footer-link">Fale conosco</a></li>
-                <li><a href="" class="footer-link">SAC</a></li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h4>Entre em contato conosco</h4>
-                </li>
-                <li><a href="" class="footer-link"><i class="fa-solid fa-phone"></i> (11) 3678-1828</a></li>
-            </ul>
-
-            <div id="footer_payment">
-                <h3>Forma de Pagamento</h3>
-                <div id="footer_pay">
-                    <br>
-                    <img src="image/visa.png" alt="cartão visa" class="footer-link">
-                    <img src="image/mastercard.png" alt="mastercard" class="footer-link">
-                    <img src="image/discover.png.png" alt="" class="footer-link">
-                    <img src="image/amex.png.png" alt="" class="footer-link">
-                    <br />
-                    <img src="image/boleto.png.png" alt="" class="footer-link">
+                        <a href="">
+                            <li><i class="fa-solid fa-envelope"></i> cityfashion@contato.com</li>
+                        </a>
+                    </ul>
                 </div>
-            </div>
+                <!--fim col-1-->
 
-            <div id="footer_contacts">
-                <h3>Redes Sociais</h3>
-                <div id="footer_social_media">
-                    <a href="" class="footer-link" id="instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="" class="footer-link" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="" class="footer-link" id="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+
+
+                <!--footer coluna 2-->
+                <div class="footer-col">
+                    <h4>Siga nossas redes</h4>
+
+                    <div class="medias-sociais">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <!--fim col 2-->
 
-        </div>
-        <hr>
-        <div id="footer_copyright">
-            <div id="footer_terms">
-                <div id="footer_copy">
-                    <a href="" class="footer-link" id="termos">Termos de Uso</a>
-                    <a href="" class="footer-link" id="termos">Política de Privacidade</a>
+                <!--footer coluna 3, form-->
+                <div class="footer-col">
+                    <h4>Subscreva-se para receber novidades e promoções</h4>
+                    <div class="form-sub">
+                        <form method="post">
+                            <input type="text" name="txtnome" id="txtnome" placeholder="Nome Completo" required>
+                            <br /><br />
+                            <input type="email" name="txtemail" id="txtemail" placeholder="Email" required>
+                            <br /><br />
+                            <input type="text" name="txtmen" id="txtmen" placeholder="Faça um comentário!">
+                            <br /><br />
+                            <input type="button" value="Subscrever">
+                        </form>
+                    </div>
                 </div>
-            </div>
+                <!--fim col-3, form-->
 
-            &copy;2023 Moto City all rights reserved.
+                <!--footer coluna 4-->
+                <div class="footer-col">
+                    <h4>Nossa localizção</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5208418305733!2d-46.61147392516723!3d-23.513762278832544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58bc0ae135f9%3A0xb45b32312be49b53!2sRua%20Jos%C3%A9%20Bernardo%20Pinto%20-%20Vila%20Guilherme%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1684201954583!5m2!1spt-BR!2sbr"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <!--fim col-4-->
+            </div>
         </div>
 
     </footer>
     <!--fim footer-->
 </body>
+
 </html>
