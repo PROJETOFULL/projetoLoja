@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family= Poppins :wght@100;200;300;400;500 & display=swap');
 
 * {
@@ -6,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     letter-spacing: 1.2px;
+    text-decoration: none;
 }
 
 :root {
@@ -27,7 +29,8 @@ header {
 }
 
 main {
-    height: 100vh;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .logo img {
@@ -36,12 +39,12 @@ main {
     margin-top: 1.5rem;
 }
 
-ul {
+.header ul {
     display: flex;
     margin: 3rem;
 }
 
-#header li {
+.header li {
     list-style: none;
     color: var(--color-neutral-40);
     cursor: pointer;
@@ -50,10 +53,75 @@ ul {
     font-size: 2rem;
 }
 
-a {
+.header a {
     text-decoration: none;
 }
 
+.products {
+    display: flex;
+}
+
+.card {
+    margin: 2em auto;
+    width: min-content;
+    text-align: center;
+    border-radius: .5em;
+    padding: 1em 1.5em;
+    box-shadow: 1px 1px 10px var(--color-neutral-0);
+}
+
+.card .price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card .description {
+    font-size: 14px;
+    color: var(--color-neutral-0);
+}
+
+.card img {
+    width: 200px;
+}
+
+.card button {
+    width: 100%;
+    background-color: var(--color-neutral-30);
+    box-shadow: 3px 4px 2px 2px rgba(0, 0, 0, .30);
+    border: none;
+    font-size: 20px;
+    padding: .5em;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: red;
+    box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, .30);
+    transform: translateY(4px);
+}
+
+.emp{
+    box-shadow: 1px 1px 10px var(--color-neutral-0);
+    border-radius: 4px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1.5rem;
+}
+.emp-img img{
+    margin-left: 29%;
+    width: 300px;
+}
+.emp p{
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: justify;
+}
+.emp-img h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 footer {
     background-color: var(--color-neutral-10);
     padding: 50px 0;
@@ -98,7 +166,6 @@ iframe {
 
 .footer-col ul a li {
     font-size: 16px;
-    text-transform: capitalize;
     color: var(--color-neutral-40);
     font-weight: bold;
     text-decoration: none;
@@ -110,7 +177,7 @@ iframe {
     padding-left: 10px;
 }
 
-.footer-col ul a li i{
+.footer-col ul a li i {
     font-size: 1.5rem;
 }
 
@@ -158,7 +225,7 @@ iframe {
     color: var(--color-neutral-10);
 }
 
-.footer-col .form-sub input[type=button] {
+.footer-col .form-sub input[type=reset] {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -170,6 +237,26 @@ iframe {
     border-radius: 3px;
     font-weight: bold;
     background-color: var(--color-neutral-30);
+}
+
+hr {
+    border-color: var(--color-neutral-30);
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-10);
+    font-size: 0.9rem;
+    padding: 1rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+}
+
+#footer_copyright .footer-link {
+    margin: 5rem;
+    text-decoration: none;
+    color: var(--color-neutral-40);
 }
 
 @media (max-width: 800px) {

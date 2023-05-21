@@ -1,3 +1,4 @@
+index.html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,14 +14,14 @@
 
 <body>
     <!--Inicio header-->
-    <header>
+    <header class="header">
         <!--logo-->
         <div class="logo">
             <img src="image/motoLogo.svg" alt="icone moto">
         </div>
 
         <!--nav-->
-        <ul id="header">
+        <ul>
             <a href="#">
                 <li>Início</li>
             </a>
@@ -44,7 +45,102 @@
     <!--fim header-->
 
     <!--Inicio do conteudo-->
-    <main></main>
+    <main>
+        <div class="products" id="produtos">
+            <div class="card">
+                <img src="image/voltzEvs_motoA.jpg" alt="">
+                <h2>Voltz EVS</h2>
+                <br /><br />
+                <p class="price">R$ 19.990</p>
+                <br />
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="image/superSocoCux_moto.jpg" alt="">
+                <h2>Super Soco Cux</h2>
+                <br />
+                <p class="price">R$ 24.990</p>
+                <br />
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="image/tcMax_moto.jpg" alt="">
+                <h2>Super Soco TC Max</h2>
+                <br />
+                <p class="price">R$ 45.990</p>
+                <br />
+                <button>Comprar</button>
+            </div>
+
+        </div>
+
+        <div class="products">
+            <div class="card">
+                <img src="image/voltzEv1Sport_moto.jpg" alt="">
+                <h2>Voltz EV 1 Sport</h2>
+                <br />
+                <p class="price">R$ 14.990</p>
+                <br />
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="image/shineraySE1Chumbo_moto.png" alt="">
+                <h2>Shineray SE 1 Chumbo</h2>
+                <br />
+                <p class="price">R$ 10.990</p>
+                <br />
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="image/shineraySE1Litio_moto.png" alt="">
+                <h2>Shineray SE 1 Lítio</h2>
+                <br />
+                <p class="price">R$ 13.990</p>
+                <br />
+                <button>Comprar</button>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="emp" id="sobre">
+            <div class="emp-img">
+                <h3>Sobre nós</h3>
+                <img src="image/motoCity_edificio.png" alt="">
+            </div>
+            <p>A Moto City foi fundada em 1999 por well city, no interior de Goiás. Foi umas
+                das empresas independente e pioneiras no ramo de motos elétricas no Brasil.
+                É um dos mais importantes fabricantes de motos elétricas no mundo. A empresa
+                possui mais de 167 mil funcionários e 507 empresas presentes em todo o
+                território brasileiro. A moto city introduziu métodos para a fabricação em
+                grande escala de carros e gestão em larga escala através de uma força de
+                trabalho industrial que usa linhas de montagem em movimento. Durante a crise
+                financeira no início do século XXI, a empresa chegou perto de falência, mas
+                desde então voltou a ter rentabilidade.
+            </p>
+            <br/>
+            <hr />
+            <br/>
+            <div class="emp-img">
+                <h3>Sobre nossa tecnológia</h3>
+                <img src="image/motoExpo.jpg" alt="">
+            </div>
+            <p>Os produtos da Moto City são desenvolvidas e pensadas em prol do meio-ambiente.
+                Suas baterias são feitas de lítio e garante um aumento significativo em
+                autonomia, velocidade e tecnologia. A nova bateria fornece à nossa scooter
+                elétrica energia para percorrer percursos mais longos mais rapidamente. Assim,
+                os produtos da nossa companhia representam a nossa missão de sempre avançar e evoluir.
+                O painel digital das nossas motos permite que o condutor visualize facilmente as 
+                informações correspondentes à velocidade, capacidade da bateria, função trip, modo de 
+                pilotagem, quilometragem e mais. As motos da Moto City possui um sistema de alto-falantes 
+                que podem ser conectados ao seu celular via Bluetooth.
+            </p>
+        </div>
+    </main>
     <!--fim do conteudo-->
 
     <!--inicio footer-->
@@ -58,6 +154,9 @@
                     <ul>
                         <a href="">
                             <li><i class="fa-solid fa-phone"></i> (11) 3678-8689</li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-brands fa-whatsapp"></i> (11) 94990-9090</li>
                         </a>
 
                         <a href="">
@@ -78,7 +177,6 @@
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <!--fim col 2-->
@@ -94,7 +192,7 @@
                             <br /><br />
                             <input type="text" name="txtmen" id="txtmen" placeholder="Faça um comentário!">
                             <br /><br />
-                            <input type="button" value="Subscrever">
+                            <input type="reset" value="Subscrever">
                         </form>
                     </div>
                 </div>
@@ -109,6 +207,17 @@
 
                 </div>
                 <!--fim col-4-->
+            </div>
+        </div>
+
+        <hr>
+        <div id="footer_copyright">
+            <div id="footer_terms">
+                <div id="footer_copy">
+                    <a href="" class="footer-link" id="termos">Termos de Uso</a>
+                    <a href="" class="footer-link" id="termos">Política de Privacidade</a>
+                    <a href="" class="footer-link" id="termos">&copy;2023 Moto City all rights reserved.</a>
+                </div>
             </div>
         </div>
 
