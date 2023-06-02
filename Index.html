@@ -8,13 +8,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/iconMoto.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="script.js" defer></script>
     <title>Moto City</title>
 </head>
 
 <body>
-    
+    <section id="slider">
+        <div class="slider-content">
+
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="imgs/slide-1.png" alt="">
+                <img class="img-mobile" src="imgs/slide-1-mob.png" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop"  src="imgs/slide-2.png" alt="">
+                <img class="img-mobile"   src="imgs/slide-2-mob.png" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop"  src="imgs/slide-3.png" alt="">
+                <img class="img-mobile"   src="imgs/slide-3-mob.png" alt="">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+
+        </div>
+
+        
+        
+    </section>
     <section id="Mais_vendidos">
-            <h2>Escolha um de nossos produtos mais vendidos</h2>
+            <h2 style="font-size: 2.5rem;color: #ff2323;">Escolha um de nossos produtos mais vendidos</h2>
            <br><br><br>
             <div class="produtos">
     
@@ -92,7 +134,7 @@
                     <button class="red">Comprar - R$ 45.990</button>
                 </div>
     
-        </section>
+    </section>
      <!--Inicio header-->   
     <header class="header">
         <!--logo-->
@@ -121,6 +163,7 @@
                 <li><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></li>
             </a>
         </ul>
+
     </header>
     <!--fim header-->
 
@@ -166,94 +209,131 @@
             
             
         </section>
+        <!-- iniciando cads especializados -->
+        
+
         <!-- iniciando animaçao de card -->
-        <section id="aination_cards">
-           <div class="container_cards">
-                <div class="card">
+        <section id="cads-especiais">
+            
+            <div class="container">
+               <h3 class="title"> Nossas Motos</h3>
+               <div class="products-container">
+   
+                  <div class="product" data-name="p-1">
+                     <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                     <h3>Alguma Moto</h3>
+                     <div class="price">R$ 2.000.00</div>
+                  </div>
+   
+                  <div class="product" data-name="p-2">
+                     <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                     <h3>Alguma Moto</h3>
+                     <div class="price">R$ 2.000.00</div>
+                  </div>
+   
+                  <div class="product" data-name="p-3">
+                     <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                     <h3>Alguma Moto</h3>
+                     <div class="price">R$ 2.000.00</div>
+                  </div>
+   
+                  <div class="product" data-name="p-4">
+                     <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                     <h3>Alguma Moto</h3>
+                     <div class="price">R$ 2.000.00</div>
+                  </div>
+   
+                  <div class="product" data-name="p-5">
+                     <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                     <h3>Alguma Moto</h3>
+                     <div class="price">R$ 2.000.00</div>
+                  </div>
+   
+                  <div class="product" data-name="p-6">
+                     <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                     <h3>Alguma Moto</h3>
+                     <div class="price">R$ 2.000.00</div>
+                  </div>
+               </div>
+            </div>
+   
+            <div onclick="sair()" class="products-preview">
+               <div class="preview" data-target="p-1">
+                  <i onclick="sair()"class="fas fa-times"></i>
+                  <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                  <h3>Moto Aleatoria 1</h3>
+                  <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20 segundos</p>
+                  <div class="price">R$ 22331</div>
+                  <div class="buttons">
+                     <a href="">Compre Agora</a>
+                     <a href="">Adicione no carrinho</a>
+                  </div>
+               </div>
+   
+               <div class="preview" data-target="p-2">
+                  <i onclick="sair()"class="fas fa-times"></i>
+                  <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                  <h3>Moto Aleatoria 2</h3>
+                  <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20 segundos</p>
+                  <div class="price">R$ 22331</div>
+                  <div class="buttons">
+                     <a href="">Compre Agora</a>
+                     <a href="">Adicione no carrinho</a>
+                  </div>
+               </div>
+   
+               <div class="preview" data-target="p-3">
+                  <i onclick="sair()"class="fas fa-times"></i>
+                  <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                  <h3>Moto Aleatoria 3</h3>
+                  <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20 segundos</p>
+                  <div class="price">R$ 22331</div>
+                  <div class="buttons">
+                     <a href="">Compre Agora</a>
+                     <a href="">Adicione no carrinho</a>
+                  </div>
+               </div>
+   
+               <div class="preview" data-target="p-4">
+                  <i onclick="sair()"class="fas fa-times"></i>
+                  <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                  <h3>Moto Aleatoria 4</h3>
+                  <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20 segundos</p>
+                  <div class="price">R$ 22331</div>
+                  <div class="buttons">
+                     <a href="">Compre Agora</a>
+                     <a href="">Adicione no carrinho</a>
+                  </div>
+               </div>
+   
+               <div class="preview" data-target="p-5">
+                  <i onclick="sair()"class="fas fa-times"></i>
+                  <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                  <h3>Moto Aleatoria 5</h3>
+                  <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20 segundos</p>
+                  <div class="price">R$ 22331</div>
+                  <div class="buttons">
+                     <a href="">Compre Agora</a>
+                     <a href="">Adicione no carrinho</a>
+                  </div>
+               </div>
+   
+               <div class="preview" data-target="p-6">
+                  <i onclick="sair()"class="fas fa-times"></i>
+                  <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                  <h3>Moto Aleatoria 6</h3>
+                  <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20 segundos</p>
+                  <div class="price">R$ 22331</div>
+                  <div class="buttons">
+                     <a href="" >Compre Agora</a>
+                     <a href="">Adicione no carrinho</a>
+                  </div>
+               </div>
+            </div>
+            
+        </section> 
 
-                    <div class="face face1"> 
 
-                        <div class="content">
-
-                            <img src="imgs/icons8-entrega-80.png" alt="Icone de entrega">
-                            <h3>Entrega</h3>
-
-                        </div>
-                        
-                    </div>
-                   
-                    <div class="face face2">
-                        <div class="content">
-                            <p>
-                                A entrega rápida é um dos principais fatores que os clientes levam em consideração ao escolher 
-                                uma loja de motos elétricas. Para garantir que nossas entregas cheguem o mais rápido possível, 
-                                utilizamos um sistema de logística eficiente e confiabilidade.
-                              
-                            </p>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-
-               
-
-                <div class="card">
-
-                    <div class="face face1"> 
-
-                        <div class="content">
-
-                            <img src="imgs/icons8-produto-80.png" alt="Icone de entrega">
-                            <h3>Nossos Produtos</h3>
-
-                        </div>
-                        
-                    </div>
-                   
-                    <div class="face face2">
-                        <div class="content">
-                            <p>
-                                Para garantir que os produtos sejam originais e de qualidade em nossa loja ,fazemos todo o processo de fabricação dos 
-                                produtos que são acompanhados do início ao fim por um gestor da qualidade, que irá 
-                                verificar a ocorrência de não conformidades.
-                            </p>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-
-                <div class="card">
-
-                    <div class="face face1"> 
-
-                        <div class="content">
-
-                            <img src="imgs/icons8-motocicleta-80.png" alt="Motocicleta">
-                            <h3>O porque devo ter uma motoeletrica ?</h3>
-
-                        </div>
-                        
-                    </div>
-                   
-                    <div class="face face2">
-                        <div class="content">
-                            <p>
-                                As motos elétricas são mais silenciosas e práticas para o dia 
-                                a dia. Elas não emitem gases tóxicos para o meio ambiente e 
-                                exigem menos manutenção em relação as motos. Além disso, elas são mais econômicas 
-                                e você não precisa ir a um posto de gasolina.
-                            </p>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-
-                
-           </div>
-        </section>
     </main>
     <!--fim do conteudo-->
 
