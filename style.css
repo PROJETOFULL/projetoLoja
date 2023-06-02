@@ -32,6 +32,62 @@ header {
     align-items: center;
 }
 
+.navButton
+{
+    border: none;
+    border-radius: 4px;
+    padding: 9px;
+    background-color: #ff2323;
+    cursor: pointer;
+    display: none;
+}
+.menuMobile
+{
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0 , 0, 0.9);
+    z-index: 39;
+    position: fixed;
+    left: 0;
+    top: 0rem;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    display: grid;
+    place-items: center;
+}
+.ContentMobile
+{
+    position: relative;
+    display: grid;
+    gap :3rem;
+    background-color: #ff2323;
+    border-radius: 15px;
+    padding: 2rem 0;
+    width: 13rem;
+    justify-items: center;
+}
+.ContentMobile .fechar 
+{
+    position: absolute;
+    top: -6rem;
+    left: 5rem;
+    font-size: 4rem;
+    transition: all 0.5s;
+    color:#ff2323;
+}
+.fechar:hover
+{
+    transform: rotate(90deg);
+}
+.ContentMobile a
+{
+  text-decoration: none;
+  color: white;
+
+}
+
+
+
 main {
     margin-top: 10rem;
     margin-bottom: 10rem;
@@ -596,6 +652,19 @@ hr {
     .conteudo_sobre
     {
        width: auto;
+       width: 130%;
+    }
+    .header ul
+    {
+        display: none;
+    }
+    .header
+    {
+        justify-content: flex-start;
+    }
+    .navButton
+    {
+        display: block;
     }
 }
 

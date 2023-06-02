@@ -47,3 +47,11 @@ function proximaimg()
   document.getElementById('radio'+cont).checked = true;
 
 }
+function fecharMenu()
+{
+  document.getElementById('menuMobile').style.width = '0%'
+}
+function abrirMenu()
+{
+  document.getElementById('menuMobile').style.width = '100%'
+}

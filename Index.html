@@ -143,7 +143,7 @@
         </div>
 
         <!--nav-->
-        <ul>
+        <ul class="nav-desktop">
             <a href="#">
                 <li>Início</li>
             </a>
@@ -163,7 +163,18 @@
                 <li><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></li>
             </a>
         </ul>
-
+        <div id="menuMobile" class="menuMobile">
+            
+            <div class="ContentMobile">
+                <a href="script.js:void(0)" class="fechar" onclick="fecharMenu()" >&times;</a>
+                <a onclick="fecharMenu()" href="">Início</a>
+                <a onclick="fecharMenu()" href="">Produtos</a>
+                <a onclick="fecharMenu()" href="">Sobre</a>
+                <a onclick="fecharMenu()" href="">Contatos</a>
+            </div>
+        </div>
+        <button class="navButton" onclick="abrirMenu()"><i class="fa-solid fa-bars"></i></button>
+        
     </header>
     <!--fim header-->
 
