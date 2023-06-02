@@ -682,9 +682,24 @@ hr {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .footer-col {
         width: 100%;
+    }
+    .products-preview .preview img {
+        height: 10rem;
+    }
+    .img-desktop
+    {
+        display: none;
+    }
+    .img-mobile
+    {
+        display: block;
+    }
+    .nav-auto ,.nav-manual
+    {
+
     }
 }   
 
