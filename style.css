@@ -89,7 +89,7 @@ header {
 
 
 main {
-    margin-top: 10rem;
+
     margin-bottom: 10rem;
 }
 
@@ -642,6 +642,10 @@ hr {
 }
 
 @media (max-width: 800px) {
+    section
+    {
+        padding: 2rem;
+    }
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
@@ -651,8 +655,8 @@ hr {
     }
     .conteudo_sobre
     {
-       width: auto;
-       width: 130%;
+       
+       width: 100%;
     }
     .header ul
     {
@@ -665,6 +669,16 @@ hr {
     .navButton
     {
         display: block;
+    }
+    .container
+    {
+        padding: 0%;
+    }
+    .container .products-container .product img {
+        height: 10rem;
+    }
+    .container .products-container .product{
+        padding: 5rem 0rem;
     }
 }
 
