@@ -226,7 +226,7 @@ section
  
  .container .title{
     font-size: 3.5rem;
-    color:#444;
+    color:#ff2323;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
@@ -273,14 +273,15 @@ section
  
  .container .products-container .product .price{
     font-size: 2rem;
-    color:#444;
+    color:#ff2323;
  }
  
  .products-preview{
     position: fixed;
-    top:0; left:0;
+    top:-14rem; left:0;
     min-height: 100vh;
-    width: 100%;
+    width:100%;
+    height: 90rem;
     background: rgba(0,0,0,.8);
     display: none;
     align-items: center;
@@ -294,7 +295,7 @@ section
     background: #fff;
     position: relative;
     margin:2rem;
-    width: 40rem;
+    width: 30rem;
  }
  
  .products-preview .preview.active{
@@ -302,15 +303,16 @@ section
  }
  
  .products-preview .preview img{
-    height: 30rem;
+    height: 15rem;
  }
  
  .products-preview .preview .fa-times{
     position: absolute;
     top:1rem; right:1.5rem;
     cursor: pointer;
-    color:#444;
-    font-size: 4rem;
+    color:#ff2323;
+    font-size: 3rem;
+    transition: 0.5s;
  }
  
  .products-preview .preview .fa-times:hover{
@@ -346,7 +348,7 @@ section
  .products-preview .preview .price{
     padding:1rem 0;
     font-size: 2.5rem;
-    color:#27ae60;
+    color:#ff2323;
  }
  
  .products-preview .preview .buttons{
