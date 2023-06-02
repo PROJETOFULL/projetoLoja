@@ -123,38 +123,32 @@ section
 .produto button
 {
     border: none;
-    background: #eb6f6f;
+    background: #ff2323;
     width: 100%;
     border-radius: 6px;
     padding: 1rem;
     cursor: pointer;
 }
-#sobre
+section#sobre
 {
-    position: relative;
-}
-#sobre img
-{
-    position: absolute;
-    width: 41rem;
-    left: 10rem;
-    top: -1rem;
+    width: 100%;
+   background-image: url(imgs/cover-1496629821399964.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: grid;
+    place-items: center;
 }
 .conteudo_sobre
 {
     text-align: start;
     display: grid;
-    grid-template-areas: "text1 hr text2" ; 
-    width: 55rem;
     gap: 2rem;
     background-color: #272424;
     padding: 3rem;
     color: white;
-    width: 55rem;
-    position: relative;
-    right: -30vw;
-    top: 2rem;
     border-radius: 15px;
+    width: 43rem;
 }
 .sobrep1
 {
@@ -407,6 +401,7 @@ section#slider
     height: auto;
     position: relative;
     text-align: center;
+    transition: 1s;
 }
 .slide-box img
 {
@@ -597,6 +592,10 @@ hr {
         display: inline-grid;
         align-items: center;
         justify-content: center;
+    }
+    .conteudo_sobre
+    {
+       width: auto;
     }
 }
 
