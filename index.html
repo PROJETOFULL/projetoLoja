@@ -1,4 +1,3 @@
-index.html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,19 +8,142 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/iconMoto.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="script.js" defer></script>
     <title>Moto City</title>
 </head>
 
 <body>
+    <section id="slider">
+        <div class="slider-content">
+
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="imgs/slide-1.png" alt="">
+                <img class="img-mobile" src="imgs/slide-1-mob.png" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="imgs/slide-2.png" alt="">
+                <img class="img-mobile" src="imgs/slide-2-mob.png" alt="">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="imgs/slide-3.png" alt="">
+                <img class="img-mobile" src="imgs/slide-3-mob.png" alt="">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+    <section id="Mais_vendidos">
+        <h2 style="font-size: 2.5rem;color: #ff2323;">Escolha um de nossos produtos mais vendidos</h2>
+        <br><br><br>
+        <div class="produtos">
+
+            <div class="produto">
+                <h3>GWS K14RS </h3>
+                <div class="efeito-img">
+                    <img class="img-zoom" src="imgs/GWS_K14RS.png" alt="GWS K14RS">
+                </div>
+                <div class="especificacao">
+                    <div class="especificado">
+                        <img src="imgs/icons8-flash-ligado-50.png" alt="Potencia">
+                        <h3>Potencia de 8000 W</h3>
+                    </div>
+                    <div class="especificado">
+                        <img src="imgs/icons8-velocímetro-50.png" alt="Velocimitro">
+                        <h3>máx. 160 km/h</h3>
+                    </div>
+                    <div class="especificado">
+                        <img src="imgs/icons8-bateria-50.png" alt="Bateria">
+                        <h3>200km de autonomia</h3>
+                    </div>
+
+                </div>
+
+                <p></p>
+                <button class="red">Comprar - R$ 132.999,99</button>
+            </div>
+
+            <div class="produto">
+                <h3>Shineray SE 1 Lítio</h3>
+                <div class="efeito-img">
+                    <img class="img-zoom" src="imgs/Shineray_SE_1_Lítio.png" alt="Shineray SE 1 Lítio">
+                </div>
+                <div class="especificacao">
+                    <div class="especificado">
+                        <img src="imgs/icons8-flash-ligado-50.png" alt="Potencia">
+                        <h3>Potencia de 2.000W</h3>
+                    </div>
+                    <div class="especificado">
+                        <img src="imgs/icons8-velocímetro-50.png" alt="Velocimitro">
+                        <h3>máx. 50 km/h</h3>
+                    </div>
+                    <div class="especificado">
+                        <img src="imgs/icons8-bateria-50.png" alt="Bateria">
+                        <h3>60km de autonomia</h3>
+                    </div>
+
+                </div>
+
+                <p></p>
+                <button class="red">Comprar - R$ 13.990,00</button>
+            </div>
+            <div class="produto">
+                <h3>Super Soco TC Max</h3>
+                <div class="efeito-img">
+                    <img class="img-zoom" src="imgs/Super_Soco_TC_Max.png" alt="Super Soco TC Max">
+                </div>
+                <div class="especificacao">
+                    <div class="especificado">
+                        <img src="imgs/icons8-flash-ligado-50.png" alt="Potencia">
+                        <h3>Potencia de 4.500W</h3>
+                    </div>
+                    <div class="especificado">
+                        <img src="imgs/icons8-velocímetro-50.png" alt="Velocimitro">
+                        <h3>máx. 95 km/h</h3>
+                    </div>
+                    <div class="especificado">
+                        <img src="imgs/icons8-bateria-50.png" alt="Bateria">
+                        <h3>140km de autonomia</h3>
+                    </div>
+
+                </div>
+
+                <p></p>
+                <button class="red">Comprar - R$ 45.990,00</button>
+            </div>
+
+    </section>
     <!--Inicio header-->
     <header class="header">
         <!--logo-->
         <div class="logo">
-            <img src="image/motoLogo.svg" alt="icone moto">
+            <img src="imgs/motoLogo.svg" alt="icone moto">
         </div>
 
         <!--nav-->
-        <ul>
+        <ul class="nav-desktop">
             <a href="#">
                 <li>Início</li>
             </a>
@@ -41,105 +163,193 @@ index.html
                 <li><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></li>
             </a>
         </ul>
+        <div id="menuMobile" class="menuMobile">
+
+            <div class="ContentMobile">
+                <a href="script.js:void(0)" class="fechar" onclick="fecharMenu()">&times;</a>
+                <a onclick="fecharMenu()" href="#">Início</a>
+                <a onclick="fecharMenu()" href="#produtos">Produtos</a>
+                <a onclick="fecharMenu()" href="#sobre">Sobre</a>
+                <a onclick="fecharMenu()" href="#contatos">Contatos</a>
+            </div>
+        </div>
+        <button class="navButton" onclick="abrirMenu()"><i class="fa-solid fa-bars"></i></button>
+
     </header>
     <!--fim header-->
 
     <!--Inicio do conteudo-->
     <main>
-        <div class="products" id="produtos">
-            <div class="card">
-                <img src="image/voltzEvs_motoA.jpg" alt="">
-                <h2>Voltz EVS</h2>
-                <br /><br />
-                <p class="price">R$ 19.990</p>
-                <br />
-                <button>Comprar</button>
+
+
+        <section id="sobre">
+            <div class="conteudo_sobre">
+
+                <div class="sobrep1">
+                    <h3>Sobre nós</h3>
+                    <p>
+                        A Moto City foi fundada em 1999 por well city, no interior de Goiás. Foi umas
+                        das empresas independente e pioneiras no ramo de motos elétricas no Brasil.
+                        É um dos mais importantes fabricantes de motos elétricas no mundo. A empresa
+                        possui mais de 167 mil funcionários e 507 empresas presentes em todo o
+                        território brasileiro. A moto city introduziu métodos para a fabricação em
+                        grande escala de carros e gestão em larga escala através de uma força de
+                        trabalho industrial que usa linhas de montagem em movimento. Durante a crise
+                        financeira no início do século XXI, a empresa chegou perto de falência, mas
+                        desde então voltou a ter rentabilidade.
+                    </p>
+                </div>
+                <hr>
+                <div class="sobrep1">
+                    <h3>Sobre nossa tecnológia</h3>
+                    <p>
+                        Os produtos da Moto City são desenvolvidas e pensadas em prol do meio-ambiente.
+                        Suas baterias são feitas de lítio e garante um aumento significativo em
+                        autonomia, velocidade e tecnologia. A nova bateria fornece à nossa scooter
+                        elétrica energia para percorrer percursos mais longos mais rapidamente. Assim,
+                        os produtos da nossa companhia representam a nossa missão de sempre avançar e evoluir.
+                        O painel digital das nossas motos permite que o condutor visualize facilmente as
+                        informações correspondentes à velocidade, capacidade da bateria, função trip, modo de
+                        pilotagem, quilometragem e mais. As motos da Moto City possui um sistema de alto-falantes
+                        que podem ser conectados ao seu celular via Bluetooth.
+                    </p>
+                </div>
             </div>
 
-            <div class="card">
-                <img src="image/superSocoCux_moto.jpg" alt="">
-                <h2>Super Soco Cux</h2>
-                <br />
-                <p class="price">R$ 24.990</p>
-                <br />
-                <button>Comprar</button>
+
+
+        </section>
+        <!-- iniciando cads especializados -->
+
+
+        <!-- iniciando animaçao de card -->
+        <section id="cads-especiais">
+
+            <div class="container" id="produtos">
+                <h3 class="title"> Nossas Motos</h3>
+                <div class="products-container">
+
+                    <div class="product" data-name="p-1">
+                        <img src="imgs/Voltz_EV1_Sport.png" alt="Voltz EV1 Sport">
+                        <h3>Voltz EV1 Sport</h3>
+                        <div class="price">R$ 14.990,00</div>
+                    </div>
+
+                    <div class="product" data-name="p-2">
+                        <img src="imgs/Voltz_EVS.png" alt="Voltz EVS">
+                        <h3>Voltz EVS</h3>
+                        <div class="price">R$ 19.990,00</div>
+                    </div>
+
+                    <div class="product" data-name="p-3">
+                        <img src="imgs/yuki_Stella.png" alt="Yuki Stella">
+                        <h3>Yuki Stella</h3>
+                        <div class="price">R$ 22.350,00</div>
+                    </div>
+
+                    <div class="product" data-name="p-4">
+                        <img src="imgs/Shineray_SE_2.png" alt="Shineray SE 2">
+                        <h3>Shineray SE 2</h3>
+                        <div class="price">R$ 13.990,90</div>
+                    </div>
+
+                    <div class="product" data-name="p-5">
+                        <img src="imgs/GWS_K14RS.png" alt="GWS K14RS">
+                        <h3>GWS K14RS</h3>
+                        <div class="price">R$ 133.000,00</div>
+                    </div>
+
+                    <div class="product" data-name="p-6">
+                        <img src="imgs/g-max200.png" alt="G-Max 200">
+                        <h3>G-Max 200</h3>
+                        <div class="price">R$ 25.500,00</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="card">
-                <img src="image/tcMax_moto.jpg" alt="">
-                <h2>Super Soco TC Max</h2>
-                <br />
-                <p class="price">R$ 45.990</p>
-                <br />
-                <button>Comprar</button>
+            <div onclick="sair()" class="products-preview">
+                <div class="preview" data-target="p-1">
+                    <i onclick="sair()" class="fas fa-times"></i>
+                    <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                    <h3>Moto Aleatoria 1</h3>
+                    <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20
+                        segundos</p>
+                    <div class="price">R$ 22331</div>
+                    <div class="buttons">
+                        <a href="">Compre Agora</a>
+                        <a href="">Adicione no carrinho</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-2">
+                    <i onclick="sair()" class="fas fa-times"></i>
+                    <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                    <h3>Moto Aleatoria 2</h3>
+                    <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20
+                        segundos</p>
+                    <div class="price">R$ 22331</div>
+                    <div class="buttons">
+                        <a href="">Compre Agora</a>
+                        <a href="">Adicione no carrinho</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-3">
+                    <i onclick="sair()" class="fas fa-times"></i>
+                    <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                    <h3>Moto Aleatoria 3</h3>
+                    <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20
+                        segundos</p>
+                    <div class="price">R$ 22331</div>
+                    <div class="buttons">
+                        <a href="">Compre Agora</a>
+                        <a href="">Adicione no carrinho</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-4">
+                    <i onclick="sair()" class="fas fa-times"></i>
+                    <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                    <h3>Moto Aleatoria 4</h3>
+                    <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20
+                        segundos</p>
+                    <div class="price">R$ 22331</div>
+                    <div class="buttons">
+                        <a href="">Compre Agora</a>
+                        <a href="">Adicione no carrinho</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-5">
+                    <i onclick="sair()" class="fas fa-times"></i>
+                    <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                    <h3>Moto Aleatoria 5</h3>
+                    <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20
+                        segundos</p>
+                    <div class="price">R$ 22331</div>
+                    <div class="buttons">
+                        <a href="">Compre Agora</a>
+                        <a href="">Adicione no carrinho</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-6">
+                    <i onclick="sair()" class="fas fa-times"></i>
+                    <img src="imgs/GWS K14RS – R$ 133.000.jpg" alt="Moto-1">
+                    <h3>Moto Aleatoria 6</h3>
+                    <p>Esta moto alcança 300 por hota blzblbzlbzlbzl tem altonomia de 50km e faz de 0 a 100 em 20
+                        segundos</p>
+                    <div class="price">R$ 22331</div>
+                    <div class="buttons">
+                        <a href="">Compre Agora</a>
+                        <a href="">Adicione no carrinho</a>
+                    </div>
+                </div>
             </div>
 
-        </div>
+        </section>
 
-        <div class="products">
-            <div class="card">
-                <img src="image/voltzEv1Sport_moto.jpg" alt="">
-                <h2>Voltz EV 1 Sport</h2>
-                <br />
-                <p class="price">R$ 14.990</p>
-                <br />
-                <button>Comprar</button>
-            </div>
 
-            <div class="card">
-                <img src="image/shineraySE1Chumbo_moto.png" alt="">
-                <h2>Shineray SE 1 Chumbo</h2>
-                <br />
-                <p class="price">R$ 10.990</p>
-                <br />
-                <button>Comprar</button>
-            </div>
-
-            <div class="card">
-                <img src="image/shineraySE1Litio_moto.png" alt="">
-                <h2>Shineray SE 1 Lítio</h2>
-                <br />
-                <p class="price">R$ 13.990</p>
-                <br />
-                <button>Comprar</button>
-            </div>
-
-        </div>
-        </div>
-
-        <div class="emp" id="sobre">
-            <div class="emp-img">
-                <h3>Sobre nós</h3>
-                <img src="image/motoCity_edificio.png" alt="">
-            </div>
-            <p>A Moto City foi fundada em 1999 por well city, no interior de Goiás. Foi umas
-                das empresas independente e pioneiras no ramo de motos elétricas no Brasil.
-                É um dos mais importantes fabricantes de motos elétricas no mundo. A empresa
-                possui mais de 167 mil funcionários e 507 empresas presentes em todo o
-                território brasileiro. A moto city introduziu métodos para a fabricação em
-                grande escala de carros e gestão em larga escala através de uma força de
-                trabalho industrial que usa linhas de montagem em movimento. Durante a crise
-                financeira no início do século XXI, a empresa chegou perto de falência, mas
-                desde então voltou a ter rentabilidade.
-            </p>
-            <br/>
-            <hr />
-            <br/>
-            <div class="emp-img">
-                <h3>Sobre nossa tecnológia</h3>
-                <img src="image/motoExpo.jpg" alt="">
-            </div>
-            <p>Os produtos da Moto City são desenvolvidas e pensadas em prol do meio-ambiente.
-                Suas baterias são feitas de lítio e garante um aumento significativo em
-                autonomia, velocidade e tecnologia. A nova bateria fornece à nossa scooter
-                elétrica energia para percorrer percursos mais longos mais rapidamente. Assim,
-                os produtos da nossa companhia representam a nossa missão de sempre avançar e evoluir.
-                O painel digital das nossas motos permite que o condutor visualize facilmente as 
-                informações correspondentes à velocidade, capacidade da bateria, função trip, modo de 
-                pilotagem, quilometragem e mais. As motos da Moto City possui um sistema de alto-falantes 
-                que podem ser conectados ao seu celular via Bluetooth.
-            </p>
-        </div>
     </main>
     <!--fim do conteudo-->
 
