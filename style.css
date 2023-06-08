@@ -190,7 +190,14 @@ section
     width: 100%;
     border-radius: 6px;
     padding: 1rem;
+    box-shadow: 3px 4px 2px 2px rgba(0, 0, 0, .30);
+    font-weight: bold;
     cursor: pointer;
+}
+.produto button:hover{
+    background-color: red;
+    box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, .30);
+    transform: translateY(4px);
 }
 section#sobre
 {
