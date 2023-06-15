@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/iconMoto.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <script src="script.js" defer></script>
     <title>Moto City</title>
 </head>
@@ -23,13 +23,13 @@
             <input type="radio" name="btn-radio" id="radio3">
 
             <div class="slide-box primeiro">
-                <img class="img-desktop" src="imgs/slide-1.png" alt="">
-                <img class="img-mobile" src="imgs/slide-1-mob.png" alt="">
+                <img class="img-desktop" src="imgs/Moto Harley Eletrica Site.jpg" alt="">
+                <img class="img-mobile" src="imgs/Moto Harley Eletrica Responsiva.jpg" alt="">
             </div>
 
             <div class="slide-box">
-                <img class="img-desktop" src="imgs/slide-2.png" alt="">
-                <img class="img-mobile" src="imgs/slide-2-mob.png" alt="">
+                <img class="img-desktop" src="imgs/Moto Harley Eletrica.jpg" alt="">
+                <img class="img-mobile" src="imgs/moto voltz responsiva.jpg" alt="">
             </div>
 
             <div class="slide-box">
@@ -55,12 +55,16 @@
 
 
     </section>
+    <br>
+    <br><br><br>
+    <br>
+    <br><br>
     <section id="Mais_vendidos">
-        <h2 style="font-size: 2.5rem;color: #ff2323;">Escolha um de nossos produtos mais vendidos</h2>
+        <h2 style="font-size: 2.5rem;color: #ff2323;" id="fonte_inicial">Escolha um de nossos produtos mais vendidos</h2>
         <br><br><br>
-        <div class="produtos">
+        <div class="produtos" data-anima="left">
 
-            <div class="produto">
+            <div class="produto" >
                 <h3>GWS K14RS </h3>
                 <div class="efeito-img">
                     <img class="img-zoom" src="imgs/GWS_K14RS.png" alt="GWS K14RS">
@@ -156,6 +160,9 @@
             <a href="#contatos">
                 <li>Contatos</li>
             </a>
+            <a>
+                <li><i class="bi bi-brightness-high-fill" id="toggleDark"></i></li>
+            </a>
             <a href="#">
                 <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
             </a>
@@ -167,7 +174,7 @@
 
             <div class="ContentMobile">
                 <a href="script.js:void(0)" class="fechar" onclick="fecharMenu()">&times;</a>
-                <a onclick="fecharMenu()" href="#">Início</a>
+                <a onclick="fecharMenu()" href="#">Início</a>   
                 <a onclick="fecharMenu()" href="#produtos">Produtos</a>
                 <a onclick="fecharMenu()" href="#sobre">Sobre</a>
                 <a onclick="fecharMenu()" href="#contatos">Contatos</a>
@@ -192,26 +199,18 @@
                         das empresas independente e pioneiras no ramo de motos elétricas no Brasil.
                         É um dos mais importantes fabricantes de motos elétricas no mundo. A empresa
                         possui mais de 167 mil funcionários e 507 empresas presentes em todo o
-                        território brasileiro. A moto city introduziu métodos para a fabricação em
-                        grande escala de carros e gestão em larga escala através de uma força de
-                        trabalho industrial que usa linhas de montagem em movimento. Durante a crise
-                        financeira no início do século XXI, a empresa chegou perto de falência, mas
-                        desde então voltou a ter rentabilidade.
+                        território brasileiro.
                     </p>
                 </div>
                 <hr>
                 <div class="sobrep1">
-                    <h3>Sobre nossa tecnológia</h3>
+                    <h3>Sobre nossas tecnologias</h3>
                     <p>
                         Os produtos da Moto City são desenvolvidas e pensadas em prol do meio-ambiente.
                         Suas baterias são feitas de lítio e garante um aumento significativo em
                         autonomia, velocidade e tecnologia. A nova bateria fornece à nossa scooter
                         elétrica energia para percorrer percursos mais longos mais rapidamente. Assim,
                         os produtos da nossa companhia representam a nossa missão de sempre avançar e evoluir.
-                        O painel digital das nossas motos permite que o condutor visualize facilmente as
-                        informações correspondentes à velocidade, capacidade da bateria, função trip, modo de
-                        pilotagem, quilometragem e mais. As motos da Moto City possui um sistema de alto-falantes
-                        que podem ser conectados ao seu celular via Bluetooth.
                     </p>
                 </div>
             </div>
@@ -227,7 +226,7 @@
 
             <div class="container" id="produtos">
                 <h3 class="title"> Nossas Motos</h3>
-                <div class="products-container">
+                <div class="products-container" data-anima="up">
 
                     <div class="product" data-name="p-1">
                         <img src="imgs/Voltz_EV1_Sport.png" alt="Voltz EV1 Sport">

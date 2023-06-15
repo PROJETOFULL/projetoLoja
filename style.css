@@ -205,9 +205,13 @@ section#sobre
    background-image: url(imgs/cover-1496629821399964.png);
    background-position: center;
    background-size: cover;
+
    background-repeat: no-repeat;
    display: grid;
     place-items: center;
+}
+#sobre {
+    
 }
 .conteudo_sobre
 {
@@ -217,7 +221,7 @@ section#sobre
     background-color: #272424;
     padding: 3rem;
     color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     width: 43rem;
 }
 .sobrep1
@@ -539,7 +543,7 @@ iframe {
 }
 
 .footer-col {
-    width: 25%;
+    width: 23%;
     padding: 0 15px;
 }
 
@@ -755,7 +759,7 @@ hr {
      }
      
      .container .products-container .product img{
-        height: 9rem;
+        height: 9   rem;
      }
      
      .container .products-container .product:hover img{
@@ -884,5 +888,36 @@ hr {
      }
      
      
-}   
+} 
+
+/*Animacao Scroll*/
+
+[data-anima] {  /*Estamos colocando dentro dos colchetes "[]", que é um seletor de atributo. Funciona como uma class
+    ou ID.
+   Aqui estamos dizendo que todos que tiverem esse "data-anima" terão opacity 0 e transit. .3s.*/
+opacity: 0;
+transition: 1.5s;
+}
+[data-anima="up"]
+{
+transform: translate3d(0, 200px, 0); /*Faz todos que tiver com o "data anima up" seguirem essas restrições*/ 
+}
+
+[data-anima="left"] /*Já aqui estamos dizendo somente os "data-anima" que têm o nome left e assim sucessivamente.*/
+{
+transform: translate3d(-50px, 0, 0);
+}
+[data-anima].animate{ /*Aqui estamos adicionando uma class somente no css que será chamada no JS. 
+        Ou seja, quando ela for chamada
+        a opacity fica 1 e a posição volta a ser igual a inicial.*/
+opacity: 1;
+transform: translate3d(0px, 0px, 0px);
+
+}
+
+
+/*DarkMode*/
+i{
+    cursor: pointer;
+}
 
